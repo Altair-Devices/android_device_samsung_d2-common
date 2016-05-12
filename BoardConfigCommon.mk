@@ -30,6 +30,10 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Kernel
 TARGET_KERNEL_CONFIG        := cyanogen_d2_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+
+# Platform
+USE_CLANG_PLATFORM_BUILD := true
 
 # Audio
 BOARD_HAVE_AUDIENCE_A2220 := true
@@ -54,7 +58,7 @@ TARGET_IS_DERP2 := true
 
 # GPS
 TARGET_NO_RPC := true
-TARGET_GPS_HAL_PATH := device/samsung/d2-common/gps
+USE_DEVICE_SPECIFIC_GPS := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760

@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
     device/samsung/d2-common/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
     device/samsung/d2-common/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
@@ -48,6 +52,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2-common/gps/etc/gps.conf:system/etc/gps.conf \
     device/samsung/d2-common/gps/etc/sap.conf:system/etc/sap.conf
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.ambient_temperature.xml:system/etc/permissions/android.hardware.sensor.ambient_temperature.xml
 
 # Keylayout
 PRODUCT_COPY_FILES += \
